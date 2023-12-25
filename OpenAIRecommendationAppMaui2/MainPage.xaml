@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenAIRecommendationAppMaui2.MainPage"
+             Title="這是一個猜猜看遊戲" >
+
+    <ContentPage.BackgroundImageSource>
+        <FileImageSource File="backgroound.jpg" />
+    </ContentPage.BackgroundImageSource>
+
+    <StackLayout Padding="20">
+        <Entry x:Name="QuestionEntry" Placeholder="這個人是__嗎?(輸入_部分就好)" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+        <Button Text="提交" Clicked="OnGetAnswerClicked" />
+        <Label x:Name="AnswerLabel" Text="這裡將顯示回答" FontSize="25" HorizontalOptions="CenterAndExpand" />
+        <Button Text="顯示答案" Clicked="OnDisplayCharacterClicked" />
+        <Label x:Name="DisplayCharacterLabel" Text="答案" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+        <Button Text="下一題" Clicked="OnNextQuestionClicked" />
+        
+        
+    </StackLayout>
+    
+
+</ContentPage>
